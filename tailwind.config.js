@@ -6,9 +6,9 @@ module.exports = {
 	  "./index.html",
 	  "./app/**/*.{js,ts,jsx,tsx}",
 	  "./components/**/*.{js,ts,jsx,tsx}",
-	  "./src/**/*.{js,ts,jsx,tsx}", // Добавьте свои пути
+		"./src/**/*.{js,ts,jsx,tsx}",
+		// Добавьте свои пути
 	],
-	
 	theme: {
 	  container: {
 		 center: true,
