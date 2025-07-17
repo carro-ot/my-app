@@ -1,5 +1,5 @@
 import { Container, Filters, TopBar } from "@/components/shared";
-import { ProductCard } from "@/components/shared/product-card";
+import { ProductsGroupList } from "@/components/shared/products-group-list";
 import { Title } from "@/components/shared/title";
 
 export default function Home(){
@@ -11,7 +11,7 @@ export default function Home(){
 			<TopBar />
 			
 			<Container className="[ mt-10 pb-14]">
-				<div className="flex gap-[60px]">
+				<div className="flex gap-[80px]">
 
 				<div className="w-{250px}">
 						<Filters/>
@@ -19,11 +19,15 @@ export default function Home(){
 
 					<div className="flex-1">
 						<div className="flex flex-col gap-16">
-							<ProductCard
-								id={0}
-								name={"Adidas Originals Forum Bold"}
-								price={2500}
-								imageUrl={"https://i.pinimg.com/1200x/c3/c3/dc/c3c3dc8b551e244259b122108095f76d.jpg"} />
+							<ProductsGroupList title={"Новинки"} items={[{
+								id: 1,
+								name: 'Cargo Loose Pink',
+								imageUrl: 
+									'https://i.pinimg.com/736x/20/38/55/203855cf14d5160e7cf6dcbb873252b6.jpg',
+								price: 3550,
+								items: [{price: 3550}],
+							},
+						]} categoryId={1}/>
 						</div>
 					</div>
 			</div>
