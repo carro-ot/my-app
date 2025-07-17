@@ -3,6 +3,7 @@ import { Title } from './title';
 import { FilterCheckbox } from './filter-checkbox';
 import { Input } from '../ui';
 import { RangeSlider } from './range-slider';
+import { CheckboxFiltersGroup } from './checkbox-filters-group';
 
 interface Props {
 	className?: string;
@@ -26,6 +27,80 @@ export const Filters: React.FC<Props> = ({ className }) => {
 			  </div>
 			  <RangeSlider min={0} max={30000} step={10} value={[0,30000]}/>
 		  </div>
+
+		  <CheckboxFiltersGroup
+		  title="Цвет"
+				className="mt-5"
+				limit={6}
+				defaultItems={[
+					{
+						text: 'Чёрный',
+						value: '1',
+					},
+					{
+						text: 'Белый',
+						value: '2',
+					},
+					{
+						text: 'Бежевый',
+						value: '3',
+					},
+					{
+						text: 'Красный',
+						value: '4',
+					},
+					{
+						text: 'Синий',
+						value: '5',
+					},
+					{
+						text: 'Зелёный',
+						value: '6',
+					},
+{
+						text: 'Желтый',
+						value: '7',
+					},
+{
+						text: 'Серый',
+						value: '7',
+					},
+			  ]}
+			  items={[
+					{
+						text: 'Чёрный',
+						value: '1',
+					},
+					{
+						text: 'Белый',
+						value: '2',
+					},
+					{
+						text: 'Бежевый',
+						value: '3',
+					},
+					{
+						text: 'Красный',
+						value: '4',
+					},
+					{
+						text: 'Синий',
+						value: '5',
+					},
+					{
+						text: 'Зелёный',
+						value: '6',
+					},
+{
+						text: 'Желтый',
+						value: '7',
+					},
+{
+						text: 'Серый',
+						value: '7',
+					},
+			  ]}
+		  />
 	 </div>
   );
 };
